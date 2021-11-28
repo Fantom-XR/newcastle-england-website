@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SE England ~ Home</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+		:root {
+			--bg-colour: rgb(41, 41, 41);
+			--secondary-colour: rgb(60, 60, 60);
+			--nav-height: 12vh;
+		}
+
+		body {
+			overflow-x: hidden;
+			padding: 0;
+			margin: 0;
+			font-family: Montserrat, sans-serif;
+			min-height: 100vh;
+			background: var(--bg-colour);
+		}
+
+		/* Nav */
+		@media only screen and (min-width: 768px) {
+			nav-mobile {
+				display: none;
+			}
+		}
+
+		nav {
+			position: sticky;
+			width: 100%;
+			height: var(--nav-height);
+			background: var(--secondary-colour);
+			padding-top: 5px;
+			padding-bottom: 10px;
+			box-shadow: 0px 0px 15px 5px rgba(60, 60, 60, 0.5);
+			z-index: 5;
+		}
+
+		nav>img {
+			height: var(--nav-height);
+			aspect-ratio: 1;
+			border-radius: 50%;
+			margin-left: 5px;
+		}
+
+		nav>ul {
+			height: var(--nav-height);
+			width: 75vh;
+			right: 5vw;
+			top: 0;
+			align-items: center;
+			display: inline;
+			justify-content: space-between;
+			vertical-align: middle;
+		}
+
+		nav>ul>li {
+			text-decoration: none;
+			list-style: none;
+			text-align: center;
+			display: inline;
+			float: right;
+			margin-right: 2.5vw;
+			height: var(--nav-height);
+		}
+
+		nav>ul>li>a {
+			position: relative;
+			text-decoration: none;
+			font-size: 125%;
+			text-align: center;
+			line-height: var(--nav-height);
+			color: white;
+			display: block;
+		}
+
+		/* Nav on phone */
+		@media only screen and (max-width: 768px) {
+			nav {
+				display: none;
+			}
+
+			nav-mobile {
+				display: flex;
+			}
+		}
+
+		nav-mobile {
+			position: sticky;
+			width: 100vw;
+			height: 5vh;
+			background: var(--secondary-colour);
+			align-items: center;
+			color: white;
+		}
+
+		nav-mobile>h2 {
+			position: absolute;
+			width: 50vw;
+			top: 50%;
+			transform: translateY(-37.5%);
+			text-align: center;
+			margin-top: 0;
+			margin-left: 13vw;
+			height: 5vh;
+		}
+
+		nav-mobile>ion-icon {
+			position: absolute;
+			height: 5vh;
+			width: 10vw;
+			margin-left: 2.5vw;
+		}
+
+		/* Main */
+		main {
+			color: white;
+		}
+
+		main>h3 {
+			margin-left: 2.5vw;
+			font-size: 2vw;
+		}
+
+		main>h4 {
+			margin-left: 2.5vw;
+			font-size: 1vw;
+		}
+
+		main>form {
+			width: 95vw;
+			margin-left: 2.5vw;
+		}
+
+		main>form>label {
+			font-weight: 600;
+		}
+
+		main>form>input {
+			width: 95vw;
+			border-radius: 5px;
+			box-shadow: 0px 0px 15px 5px rgba(60, 60, 60, 0.5);
+			background: var(--secondary-colour);
+			border: none;
+			color: white;
+			font-family: Montserrat, sans-serif;
+			font-weight: 400;
+		}
+
+		main>form>button {
+			-webkit-appearance: button;
+			-moz-appearance: button;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-webkit-padding-end: 20px;
+			-moz-padding-end: 20px;
+			-webkit-padding-start: 2px;
+			-moz-padding-start: 2px;
+			background-color: var(--secondary-colour);
+			background-position: center right;
+			background-repeat: no-repeat;
+			border: 1px solid #AAA;
+			border-radius: 5px;
+			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+			color: white;
+			font-size: inherit;
+			margin: 0;
+			overflow: hidden;
+			padding-top: 2px;
+			padding-bottom: 2px;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			text-align: center;
+		}
+
+		/* Footer */
+		footer {
+			bottom: 0;
+			display: flex;
+			align-items: center;
+      position: absolute;
+			width: 100vw;
+			height: 10vh;
+			background: var(--secondary-colour);
+			z-index: 2;
+		}
+
+		footer>p {
+			color: white;
+			font-size: 1vw;
+			width: 90vw;
+			margin-left: 5vw;
+			text-align: center;
+			font-weight: 400;
+		}
+
+		footer>p>a {
+			color: white;
+			font-weight: 500;
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<img src="https://media.discordapp.net/attachments/741290785122811965/900457172582924318/Screenshot_27.jpg">
+        <ul>
+            <li><a href="/login" class="stafflogin">Staff Login</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/home">Home</a></li>
+        </ul>
+    </nav>
+    <nav-mobile>
+      <ion-icon name="menu-outline"></ion-icon>
+      <h2>SE England</h2>
+    </nav-mobile>
+
+    <main>
+        <h3 class="title">Staff Login</h3>
+        <h4 class="desc">If you attempt to login with an account that is not yours and you don't have access to this system, you are breaking the law.</h4>
+        <form id="login-form">
+          <label class="username-text" for="username">
+            Username
+          </label>
+          <br>
+          <input type="text" required id="username" name="username" class="username text-input">
+          <br>
+          <br>
+
+          <label for="password" class="password-text">
+            Password
+          </label>
+          <br>
+          <input type="text" name="password" required class="password text-input" id="password">
+          <br>
+          <br>
+
+          <button type="submit" value="Submit">Login</button>
+        </form>
+        <h4 id="errortext" class="errortext" style="color:rgb(225,0,0);"></h2>
+        <br>
+        <br>
+    </main>
+
+    <footer>
+        <p>Owned by <a href="https://www.roblox.com/groups/6321371">SE England</a> and made by <a href="mailto:joebiondani@gmail.com">Joe Biondani</a></p>  
+    </footer>
+
+    <script>
+      const form = document.getElementById('login-form')
+      form.addEventListener('submit', login)
+      
+      async function login(event) {
+        event.preventDefault();
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        fetch('https://api.se-england.cf/checkLoginData', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            username: username,
+            password: password
+          })
+        }).then(result => {
+          result.json().then(res => {
+            if (res.status == "ok") {
+              window.location = "https://www.se-england.cf/staff/home"
+            } else {
+              document.getElementById("errortext").innerHTML = res.error
+            }
+          })
+        })
+      }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Newcastle, England ~ Home</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap');
+
+		:root {
+			--bg-colour: rgb(41, 41, 41);
+			--secondary-colour: rgb(60, 60, 60);
+			--nav-height: 12vh;
+		}
+
+		body {
+			padding: 0;
+			margin: 0;
+			font-family: Montserrat, sans-serif;
+			min-height: 100vh;
+			background: var(--bg-colour);
+		}
+
+		/* Nav */
+		nav {
+			position: sticky;
+			width: 100%;
+			height: var(--nav-height);
+			background: var(--secondary-colour);
+			padding-top: 5px;
+			padding-bottom: 10px;
+			box-shadow: 0px 0px 15px 5px rgba(60, 60, 60, 0.5);
+			z-index: 5;
+		}
+
+		nav>img {
+			height: var(--nav-height);
+			aspect-ratio: 1;
+			border-radius: 50%;
+			margin-left: 5px;
+		}
+
+		nav>ul {
+			height: var(--nav-height);
+			width: 75vh;
+			right: 5vw;
+			top: 0;
+			align-items: center;
+			display: inline;
+			justify-content: space-between;
+			vertical-align: middle;
+		}
+
+		nav>ul>li {
+			text-decoration: none;
+			list-style: none;
+			text-align: center;
+			display: inline;
+			float: right;
+			margin-right: 2.5vw;
+			height: var(--nav-height);
+		}
+
+		nav>ul>li>a {
+			position: relative;
+			text-decoration: none;
+			font-size: 125%;
+			text-align: center;
+			line-height: var(--nav-height);
+			color: white;
+			display: block;
+		}
+
+		/* Main */
+		main>.bgimg {
+			position: absolute;
+			top: calc(var(--nav-height) - 30px);
+			width: 100vw;
+			height: calc(100vh - var(--nav-height) + 30px);
+			object-fit: none;
+		}
+
+		main>.text-holder {
+			position: absolute;
+			top: calc(var(--nav-height) + 10vh);
+			left: 10vh;
+			background: var(--secondary-colour);
+			color: white;
+			height: auto;
+			width: 20vw;
+			display: flex;
+			align-items: center;
+			border-radius: 15px;
+		}
+
+		main>.text-holder>h1 {
+			position: relative;
+			text-align: center;
+			font-weight: 700;
+			top: 0;
+			left: 0;
+			width: 20vw;
+			height: auto;
+			font-size: 2.5vw;
+		}
+
+		main>.text-holder2 {
+			position: absolute;
+			top: calc(var(--nav-height) + 30vh);
+			left: 10vh;
+			background: var(--secondary-colour);
+			color: white;
+			height: auto;
+			display: flex;
+			align-items: center;
+			width: 60vw;
+			border-radius: 15px;
+		}
+
+		main>.text-holder2>h3 {
+			position: relative;
+			text-align: center;
+			font-weight: 500;
+			top: 0;
+			vertical-align: middle;
+			left: 0;
+			height: auto;
+			font-size: 2vw;
+		}
+
+		/* Cookies */
+		main>.cookiesnotif {
+			width: 20vw;
+			height: 20vh;
+			background: var(--secondary-colour);
+			color: white;
+			position: absolute;
+			display: none;
+			border-radius: 15px;
+			bottom: 15vh;
+			font-size: 1vw;
+			right: 5vh;
+		}
+
+		main>.cookiesnotif>h3 {
+			width: 18vw;
+			margin-left: 1vw;
+			height: 8vh;
+		}
+
+		main>.cookiesnotif>h3>a {
+			color: white;
+		}
+
+		main>.cookiesnotif>button {
+			width: 18vw;
+			height: 6vh;
+			bottom: 2vh;
+			margin-left: 1vw;
+			background: var(--bg-colour);
+			border-radius: 15px;
+			border: none;
+			color: white;
+			font-size: 1vw;
+		}
+
+		/* Footer */
+		footer {
+			position: absolute;
+			top: 90vh;
+			display: flex;
+			align-items: center;
+			width: 100vw;
+			height: 10vh;
+			background: var(--secondary-colour);
+			z-index: 2;
+		}
+
+		footer>p {
+			color: white;
+			font-size: 1vw;
+			width: 90vw;
+			margin-left: 5vw;
+			text-align: center;
+			font-weight: 400;
+		}
+
+		footer>p>a {
+			color: white;
+			font-weight: 500;
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<img src="https://media.discordapp.net/attachments/741290785122811965/900457172582924318/Screenshot_27.jpg">
+        <ul>
+            <li><a href="/login" class="stafflogin">Staff Login</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/home">Home</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <img class="bgimg" src="https://media.discordapp.net/attachments/693523758014529636/883707931139387452/RobloxScreenShot20210904_143951349.png">
+        <div class="text-holder">
+          <h1>Newcastle</h1>
+        </div>
+
+        <div class="text-holder2">
+          <h3>Our roleplay server is based in the heart of the Newcastle, England. You can be anything from a member of the police, to an AA mechanic or even a paremedic! The possibilites are endless!</h3>
+        </div>
+
+        <div id="cookiesnotif" class="cookiesnotif">
+          <h3>
+            This website uses cookies to improve your experience.<br><a href="/cookies">Learn More</a>
+          </h3>
+          <button id="cookiesbtn" type="button">Ok!</button>
+        </div>
+    </main>
+
+    <footer>
+      <p>Owned by <a href="https://www.roblox.com/groups/12719556">SE England</a> and made by <a href="mailto:kermitthefrog37.roblox@gmail.com">Fantom XR</a></p>  
+    </footer>
+
+    <script>
+        function getCookie(cname) {
+          let name = cname + "=";
+          let decodedCookie = decodeURIComponent(document.cookie);
+          let ca = decodedCookie.split(';');
+          for(let i = 0; i <ca.length; i++) {
+              let c = ca[i];
+              while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+              }
+              if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+              }
+          }
+          return "";
+        }
+
+        function setCookie(cname, cvalue, exdays) {
+          const d = new Date();
+          d.setTime(d.getTime() + (exdays*24*60*60*1000));
+          let expires = "expires="+ d.toUTCString();
+          document.cookie = cname + "=" + cvalue + ";" + expires + "; SameSite=None; Secure";
+        }
+
+        if (getCookie("acceptedcookies") != "true") {
+            document.getElementById("cookiesnotif").style = "display:block;"
+        }
+
+        document.getElementById("cookiesbtn").addEventListener("click", function() {
+          document.getElementById("cookiesnotif").style = "display:none;";
+          setCookie("acceptedcookies", "true", 14);
+        });
+    </script>
+</body>
+</html>
